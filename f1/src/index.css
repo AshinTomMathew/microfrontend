@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------
+   Minimal CSS - No Bootstrap or Global Styles
+   Only component-scoped styles to avoid conflicts
+   --------------------------------------------------------- */
+
+/* Basic body defaults (minimal) */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6B6A75;
+  background-color: #FFFFFF;
+}
+
+/* Remove default link underline */
+a {
+  color: #2878EB;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Category card pulse animation - used by CategoryItem */
+@keyframes cat-pulse {
+  0%, 100% { 
+    opacity: 1;   
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.4; 
+    transform: scale(0.7); 
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #120F2D;
+}
+
+/* Paragraph */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Remove list styling */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Button reset */
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Input reset */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Image handling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SVG handling */
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}

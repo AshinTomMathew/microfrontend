@@ -1,0 +1,15 @@
+{
+  "name": "micro-frontend-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "shell": "cd shell-app && npm start",
+    "f1": "cd f1 && npm start",
+    "f2": "cd f2 && npm start",
+    "f3": "cd f3 && npm start",
+    "start-all": "concurrently \"npm run shell\" \"npm run f1\" \"npm run f2\" \"npm run f3\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
